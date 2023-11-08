@@ -5,8 +5,9 @@ const App = () => {
   return <div>
     
     <section id="Homepage">
-      <Navbar/>
-      <Hero/>
+    <Navbar/>
+    <Hero/>
+      
     </section>
     <section id="Skills">parrallax</section>
     <section id="Portfolio">services</section>
