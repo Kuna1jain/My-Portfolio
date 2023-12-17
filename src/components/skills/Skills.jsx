@@ -1,35 +1,45 @@
 import React from "react";
+import "./Skills.scss";
 import ProgressBar from "@ramonak/react-progress-bar";
 const Skills = () => {
-    return(
-    <div className="bars">
-        <div className="Reactjs">
-            <p>Reactjs</p>
-            <ProgressBar completed={80}
-            bgColor="yellow"
-            animateOnRender={true}/>
-        </div>
-        <div className="JavaScript">
-            <p>Javascript</p>
-            <ProgressBar completed={80}
-            // bgColor="yellow"
-            animateOnRender={true}/>
-        </div>
-        <div className="DSA">
-            <p>Data Structures</p>
-            <ProgressBar completed={80}
-            // bgColor="yellow"
-            animateOnRender={true}/>
-        </div>
-        <div className="C++">
-            <p>C++ </p>
-            <ProgressBar completed={80}
-            // bgColor="yellow"
-            animateOnRender={true}/>
-        </div>
+    return (
 
-    </div>
+        <div className="bars">
+            <h1 > My skills </h1>
+            <div className="skillbox">
+                <div className="Reactjs">
+                    <p>Reactjs</p>
+                    <ProgressBar completed={80}
+                        bgColor="rgb(204, 204, 0)"
+                        labelColor="black"
+                        animateOnRender={true} />
+                </div>
+                <br />
+                <div className="JavaScript">
+                    <p>Javascript</p>
+                    <ProgressBar completed={80}
+                        // bgColor="yellow"
+                        animateOnRender={true} />
+                </div>
+                <br />
+                <div className="DSA">
+                    <p>Data Structures</p>
+                    <ProgressBar completed={80}
+                        bgColor="#5C8374"
+                        animateOnRender={true} />
+                </div>
+                <br />
+                <div className="C++">
+                    <p>C++ </p>
+                    <ProgressBar completed={80}
+                        bgColor="skyblue"
+                        labelColor="rgb(12, 12, 29)"
+                        animateOnRender={true} />
+                </div>
+            </div>
+
+        </div>
     );
-    4
+
 };
 export default Skills;
